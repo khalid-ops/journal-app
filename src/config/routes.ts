@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import React from "react";
 import Home from "../app/Home";
-import { Journal } from "@/app/Journal/UpsertPage";
+import { Journal } from "@/app/Journal-Upsert";
 import { RouteStrings } from "./routeStrings";
 
 const router = createBrowserRouter([

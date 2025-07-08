@@ -10,7 +10,7 @@ export const DashboardCardsSection = () => {
                     <CardDescription className="text-black" >Total Journals</CardDescription>
                     <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">10</CardTitle>
                     <CardAction>
-                        <Badge className="bg-black text-white" >
+                        <Badge className="bg-black text-white">
                             <BookCopy />
                         </Badge>
                     </CardAction>
