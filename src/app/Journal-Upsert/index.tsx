@@ -25,7 +25,7 @@ export const Journal = () => {
   });
   return (
     <Layout props={{ title: "Journals" }}>
-      <div className="flex flex-1 overflow-auto rounded-md border ml-2 mr-2">
+      <div className="flex flex-1 overflow-auto rounded-md border ml-2 mr-2 mt-3">
         <div className="w-2/3 p-4">
           <div className="flex flex-col gap-4">
             <div className="flex items-center w-full gap-2 border-b pb-2">

@@ -1,18 +1,15 @@
-import { Badge } from "./ui/badge"
 import { Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import { BadgeAlert, BookAlertIcon, BookCopy, Calendar1, ListPlusIcon, TagsIcon } from 'lucide-react';
+import { BadgeAlert, BookAlertIcon, BookCopy, Calendar1, Flame, ListPlusIcon, TagsIcon, TrendingUpIcon } from 'lucide-react';
 
 export const DashboardCardsSection = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-2">
-            <Card className="from-violet-100 to-violet-400 bg-gradient-to-br rounded-lg @container/card">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 px-2 mt-3">
+            <Card className="from-teal-50 to-teal-200 bg-gradient-to-b rounded-lg @container/card">
                 <CardHeader>
                     <CardDescription className="text-black" >Total Journals</CardDescription>
                     <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">10</CardTitle>
                     <CardAction>
-                        <Badge className="bg-black text-white">
-                            <BookCopy />
-                        </Badge>
+                        <BookCopy />
                     </CardAction>
 
                 </CardHeader>
@@ -22,14 +19,12 @@ export const DashboardCardsSection = () => {
                     </div>
                 </CardFooter>
             </Card>
-            <Card className="from-blue-100 to-blue-400 bg-gradient-to-br rounded-lg @container/card">
+            <Card className="from-teal-50 to-teal-200 bg-gradient-to-b rounded-lg @container/card">
                 <CardHeader>
                     <CardDescription className="text-black">New Entries</CardDescription>
                     <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">25</CardTitle>
                     <CardAction>
-                        <Badge className="bg-black text-white">
                             <ListPlusIcon />
-                        </Badge>
                     </CardAction>
                 </CardHeader>
                 <CardFooter className="flex-col items-start gap-1.5 text-sm">
@@ -38,14 +33,26 @@ export const DashboardCardsSection = () => {
                     </div>
                 </CardFooter>
             </Card>
-            <Card className="from-green-100 to-green-400 bg-gradient-to-br rounded-lg @container/card">
+            <Card className="from-teal-50 to-teal-200 bg-gradient-to-b rounded-lg @container/card">
+                <CardHeader>
+                    <CardDescription className="text-black">Writing Streak</CardDescription>
+                    <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">5 Days</CardTitle>
+                    <CardAction>
+                            <TrendingUpIcon />
+                    </CardAction>
+                </CardHeader>
+                <CardFooter className="flex-col items-start gap-1.5 text-sm">
+                    <div className="line-clamp-1 flex gap-2 font-medium text-muted-foreground">
+                        Your current streak <Flame className="size-4" />
+                    </div>
+                </CardFooter>
+            </Card>
+            <Card className="from-teal-50 to-teal-200 bg-gradient-to-b rounded-lg @container/card">
                 <CardHeader>
                     <CardDescription className="text-black">Tags Available</CardDescription>
                     <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">15</CardTitle>
                     <CardAction>
-                        <Badge className="bg-black text-white">
                             <TagsIcon />
-                        </Badge>
                     </CardAction>
                 </CardHeader>
                 <CardFooter className="flex-col items-start gap-1.5 text-sm">
