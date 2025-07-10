@@ -1,9 +1,7 @@
 import * as React from "react"
 import {
-  BarChart2,
+  BookOpenIcon,
   GalleryVerticalEnd,
-  ListIcon,
-  NotebookTextIcon,
   PenLineIcon,
   Settings2,
   TagsIcon,
@@ -39,24 +37,15 @@ const data = {
     {
       title: "Dashboard",
       url: RouteStrings.HOME,
-      icon: BarChart2,
+      icon: BookOpenIcon,
       isActive: true,
     },
     {
-      title: "Journal",
+      title: "All Journals",
       url: "#",
       icon: PenLineIcon,
       isActive: false,
-      items: [{
-        title: "New Entry",
-        url: RouteStrings.JOURNAL,
-        icon: NotebookTextIcon
-      },
-      {
-        title: "All Entries",
-        url: RouteStrings.JOURNAL_VIEW,
-        icon: ListIcon
-      }],
+      items: [],
     },
     {
       title: "Tags",

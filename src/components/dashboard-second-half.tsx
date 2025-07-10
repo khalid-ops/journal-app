@@ -79,23 +79,23 @@ export const DashboardSecondHalf = () => {
                             <ul>
                                 <li className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer">
                                     <Label>Favourite Journal</Label>
-                                    <Badge variant="secondary">Personal</Badge>
+                                    <Badge className="bg-indigo-400">Personal</Badge>
                                 </li>
                                 <li className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer">
                                     <Label>Exploring the Mountains</Label>
-                                    <Badge variant="secondary">Travel</Badge>
+                                    <Badge className="bg-indigo-400">Travel</Badge>
                                 </li>
                                 <li className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer">
                                     <Label>Work Journal</Label>
-                                    <Badge variant="secondary">Work</Badge>
+                                    <Badge className="bg-indigo-400">Work</Badge>
                                 </li>
                                 <li className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer">
                                     <Label>Weekend Reflections</Label>
-                                    <Badge variant="secondary">Personal</Badge>
+                                    <Badge className="bg-indigo-400">Personal</Badge>
                                 </li>
                                 <li className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer">
                                     <Label>Travel Adventures</Label>
-                                    <Badge variant="secondary">Travel</Badge>
+                                    <Badge className="bg-indigo-400">Travel</Badge>
                                 </li>
                             </ul>
                         </div>
