@@ -1,6 +1,6 @@
 import Layout from "../Layout/layout";
-import { DashboardCardsSection } from "@/components/dashboard-cards";
-import { DashboardSecondHalf } from "@/components/dashboard-second-half";
+import { DashboardCardsSection } from "@/components/Dashboard/dashboard-cards";
+import { DashboardSecondHalf } from "@/components/Dashboard/dashboard-second-half";
 import { Button } from "@/components/ui/button";
 import { RouteStrings } from "@/config/routeStrings";
 import { useNavigate } from "react-router";

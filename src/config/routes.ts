@@ -4,6 +4,7 @@ import Home from "../app/Home";
 import { Journal } from "@/app/Journal";
 import AllJournals from "@/app/Journal/ListPage";
 import { RouteStrings } from "./routeStrings";
+import LoginPage from "@/app/Login";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         element: React.createElement(Journal),
         path: RouteStrings.JOURNAL_CREATE,
     },
+    {
+        element: React.createElement(LoginPage),
+        path: RouteStrings.LOGIN,
+    }
 ]);
 
 export default router;

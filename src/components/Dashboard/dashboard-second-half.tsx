@@ -1,13 +1,13 @@
 import { ListIcon, NotebookPenIcon, PinIcon } from "lucide-react"
-import { Input } from "./ui/input"
-import { TypographyH4 } from "./ui/typography"
-import { Button } from "./ui/button"
-import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
-import { Label } from "./ui/label"
+import { Input } from "../ui/input"
+import { TypographyH4 } from "../ui/typography"
+import { Button } from "../ui/button"
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip"
+import { Label } from "../ui/label"
 import { useNavigate } from "react-router"
 import { RouteStrings } from "@/config/routeStrings"
-import { DataTable } from "./ui/data-table"
-import { Badge } from "./ui/badge"
+import { DataTable } from "../ui/data-table"
+import { Badge } from "../ui/badge"
 
 export const DashboardSecondHalf = () => {
 

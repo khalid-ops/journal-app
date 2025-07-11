@@ -1,4 +1,4 @@
-import { Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
 import { BadgeAlert, BookAlertIcon, BookCopy, Calendar1, Flame, ListPlusIcon, TagsIcon, TrendingUpIcon } from 'lucide-react';
 
 export const DashboardCardsSection = () => {
