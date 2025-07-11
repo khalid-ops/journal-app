@@ -1,7 +1,7 @@
 export const RouteStrings = {
     HOME: "/",
     JOURNAL: "/journal",
-    JOURNAL_UPSERT: "/journal/upsert",
+    JOURNAL_CREATE: "/journal/create",
     JOURNAL_VIEW: "/journal/view/:id",
     JOURNAL_EDIT: "/journal/edit/:id",
     SETTINGS: "/settings",

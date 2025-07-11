@@ -3,25 +3,25 @@ import { Input } from "./ui/input"
 import { TypographyH4 } from "./ui/typography"
 import { Button } from "./ui/button"
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table"
-import { Badge } from "./ui/badge"
 import { Label } from "./ui/label"
 import { useNavigate } from "react-router"
 import { RouteStrings } from "@/config/routeStrings"
+import { DataTable } from "./ui/data-table"
+import { Badge } from "./ui/badge"
 
 export const DashboardSecondHalf = () => {
 
     const navigate = useNavigate();
     return (
-        <div className="mt-3 px-2">
-            <div className="flex flex-1 overflow-auto rounded-md border">
+        <div className="mt-2 px-2 mb-2">
+            <div className="flex flex-1 rounded-md border">
                 <div className="w-2/3 border-r">
                     <div className="flex items-center gap-2 p-4 border-b">
                         <TypographyH4 text="Recent Journals" />
                         <div className="flex justify-end gap-2 ml-auto">
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    <Button variant="outline" size='icon' onClick={() => navigate(RouteStrings.JOURNAL)}>
+                                    <Button variant="outline" size='icon' onClick={() => navigate(RouteStrings.JOURNAL_CREATE)}>
                                         <NotebookPenIcon className="size-4" />
                                     </Button>
                                 </TooltipTrigger>
@@ -38,34 +38,30 @@ export const DashboardSecondHalf = () => {
                         </div>
                         <Input placeholder="Search" className="w-1/4" />
                     </div>
-                    <div className="p-4 rounded-md border m-2 ">
+                    <div className="p-2">
                         <div className="overflow-auto rounded-md border">
-                            <Table>
-                                <TableHeader>
-                                    <TableRow>
-                                        <TableHead>Written On</TableHead>
-                                        <TableHead>Title</TableHead>
-                                        <TableHead>Tag</TableHead>
-                                    </TableRow>
-                                </TableHeader>
-                                <TableBody>
-                                    <TableRow>
-                                        <TableCell>2023-03-15</TableCell>
-                                        <TableCell>My First Journal</TableCell>
-                                        <TableCell><Badge>Personal</Badge></TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>2023-03-16</TableCell>
-                                        <TableCell>Exploring the Mountains</TableCell>
-                                        <TableCell><Badge>Travel</Badge></TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell>2023-03-19</TableCell>
-                                        <TableCell>Exploring the Areas</TableCell>
-                                        <TableCell><Badge>Work</Badge></TableCell>
-                                    </TableRow>
-                                </TableBody>
-                            </Table>
+                            <DataTable columns={[
+                                {
+                                    accessorKey: 'writtenOn',
+                                    header: 'Written On',
+                                    cell: info => info.getValue(),
+                                },
+                                {
+                                    accessorKey: 'title',
+                                    header: 'Title',
+                                    cell: info => info.getValue(),
+                                },
+                                {
+                                    accessorKey: 'tag',
+                                    header: 'Tag',
+                                    cell: info => <Badge>{String(info.getValue())}</Badge>,
+                                }
+                            ]} data={[
+                                { writtenOn: '2023-03-15', title: 'My First Journal', tag: 'Personal' },
+                                { writtenOn: '2023-03-16', title: 'Exploring the Mountains', tag: 'Travel' },
+                                { writtenOn: '2023-03-19', title: 'Exploring the Areas', tag: 'Work' },
+                                { writtenOn: '2023-03-20', title: 'Weekend Reflections', tag: 'Personal' },
+                            ]} />
                         </div>
                     </div>
                 </div>

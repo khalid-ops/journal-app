@@ -3,7 +3,7 @@ import { BadgeAlert, BookAlertIcon, BookCopy, Calendar1, Flame, ListPlusIcon, Ta
 
 export const DashboardCardsSection = () => {
     return (
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 px-2 mt-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 px-2 mt-2">
             <Card className="from-teal-50 to-teal-200 bg-gradient-to-b rounded-lg @container/card">
                 <CardHeader>
                     <CardDescription className="text-black" >Total Journals</CardDescription>

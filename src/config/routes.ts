@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import React from "react";
 import Home from "../app/Home";
-import { Journal } from "@/app/Journal-Upsert";
+import { Journal } from "@/app/Journal";
+import AllJournals from "@/app/Journal/ListPage";
 import { RouteStrings } from "./routeStrings";
 
 const router = createBrowserRouter([
@@ -10,8 +11,12 @@ const router = createBrowserRouter([
         path: RouteStrings.HOME,
     },
     {
-        element: React.createElement(Journal),
+        element: React.createElement(AllJournals),
         path: RouteStrings.JOURNAL,
+    },
+    {
+        element: React.createElement(Journal),
+        path: RouteStrings.JOURNAL_CREATE,
     },
 ]);
 

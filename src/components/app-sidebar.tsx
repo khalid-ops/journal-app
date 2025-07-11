@@ -1,7 +1,7 @@
 import * as React from "react"
 import {
   BookOpenIcon,
-  GalleryVerticalEnd,
+  NotepadText,
   PenLineIcon,
   Settings2,
   TagsIcon,
@@ -28,9 +28,9 @@ const data = {
   },
   teams: [
     {
-      name: "PJapp",
-      logo: GalleryVerticalEnd,
-      plan: "",
+      name: "PJApp",
+      logo: NotepadText,
+      plan: "Private & Secure",
     },
   ],
   navMain: [
@@ -42,7 +42,7 @@ const data = {
     },
     {
       title: "All Journals",
-      url: "#",
+      url: RouteStrings.JOURNAL,
       icon: PenLineIcon,
       isActive: false,
       items: [],
